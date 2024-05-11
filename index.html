@@ -3,58 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Búsqueda de Empleados</title>
+    <title>Búsqueda de Productos Alimenticios</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Búsqueda de Empleados</h1>
+    <h1>Búsqueda de Productos Alimenticios</h1>
 
-    <label for="rutInput">Filtrar por RUT:</label>
-    <input type="text" id="rutInput" placeholder="Ejemplo: 13715966k">
-    
-    <label for="cargoSelect">Filtrar por Cargo:</label>
-    <select id="cargoSelect">
+    <label for="proveedorSelect">Filtrar por Proveedor:</label>
+    <select id="proveedorSelect">
         <option value="">Todos</option>
-        <option value="Operario">Operario</option>
-        <option value="Aseo y Jardinería">Aseo y Jardinería</option>
-        <option value="Encargado de Turno Distrib. y Despacho">Encargado de Turno Distrib. y Despacho</option>
-        <option value="Jefe de Logística">Jefe de Logística</option>
-        <option value="Asistente Comercial">Asistente Comercial</option>
-        <option value="Operador de Grúa">Operador de Grúa</option>
-        <option value="Camarero">Camarero</option>
-        <option value="Encargado de Calidad y Recepción">Encargado de Calidad y Recepción</option>
-        <option value="Planificador Logístico">Planificador Logístico</option>
-        <option value="Maestro Mantención Locales">Maestro Mantención Locales</option>
-        <option value="Jefe Zonal">Jefe Zonal</option>
-        <option value="Encargado de Bodega, Insumos y Adquisiciones">Encargado de Bodega, Insumos y Adquisiciones</option>
-        <option value="Ingeniero En Prevención de Riesgos">Ingeniero En Prevención de Riesgos</option>
-        <option value="Asistente de Gestión de Personas">Asistente de Gestión de Personas</option>
-        <option value="Jefe Auditoria Cajas">Jefe Auditoria Cajas</option>
-        <option value="Administrativo Contable">Administrativo Contable</option>
-        <option value="Gerente Comercial">Gerente Comercial</option>
-        <option value="Analista de Planificación y Compras">Analista de Planificación y Compras</option>
-        <option value="Subgerente de Desarrollo">Subgerente de Desarrollo</option>
-        <option value="Subgerente de Operaciones Comerciales">Subgerente de Operaciones Comerciales</option>
-        <option value="Fiscal">Fiscal</option>
-        <option value="Jefe de Administración">Jefe de Administración</option>
-        <option value="Soporte Informático">Soporte Informático</option>
-        <option value="Técnico Electrónico">Técnico Electrónico</option>
-        <option value="Vendedor(a)">Vendedor(a)</option>
-        <option value="Jefe de Ventas RM y VI Región">Jefe de Ventas RM y VI Región</option>
-        <option value="Jefe de Planificación Logística">Jefe de Planificación Logística</option>
-        <option value="Coordinador de Transporte">Coordinador de Transporte</option>
-        <option value="Jefe de Ventas Varas">Jefe de Ventas Varas</option>
-        <option value="Cajero Facturador">Cajero Facturador</option>
-        <option value="Subgerente de Ventas Zona Centro Sur">Subgerente de Ventas Zona Centro Sur</option>
-        <option value="Jefe Trafico">Jefe Trafico</option>
-        <option value="Jefe Zonal Comercial">Jefe Zonal Comercial</option>
+        <!-- Aquí debes agregar opciones basadas en los proveedores de tu JSON -->
+    </select>
+    
+    <label for="categoriaSelect">Filtrar por Categoría:</label>
+    <select id="categoriaSelect">
+        <option value="">Todos</option>
+        <!-- Aquí debes agregar opciones basadas en las categorías de tu JSON -->
     </select>
 
-    <button onclick="filtrarEmpleados()">Filtrar</button>
+    <button onclick="filtrarProductos()">Filtrar</button>
 
-    <div id="resultado">
+    <div id="resultado"></div>
 
-    </div>
-
-    <script src="buscarEmpleado.js"></script>
+    <script src="buscarProducto.js"></script>
 </body>
 </html>
